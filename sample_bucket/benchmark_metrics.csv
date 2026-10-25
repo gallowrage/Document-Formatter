@@ -1,0 +1,6 @@
+Metric,Traditional Templates,Publisher PDF Engine,Delta Improvement
+Page Fitting Accuracy,41.2%,98.7%,+57.5%
+Orphan / Widow Incidents,14 per 100 pgs,0 per 100 pgs,-100%
+Theme Swap Turnaround,4.5 hours,Instant (1 click),~instant
+Asset Aspect Retention,Partial / Cropped,Calculated & Scaled,+100%
+Generation Latency,1.2s per page,0.4s per page,-66%
