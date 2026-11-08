@@ -63,7 +63,11 @@ app.post('/api/export-pdf', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`\n🚀 Publisher PDF Studio is running!`);
-  console.log(`👉 Open http://localhost:${PORT} in your browser to preview and style on the fly.`);
-});
+export { app };
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  app.listen(PORT, () => {
+    console.log(`\n🚀 Publisher PDF Studio is running!`);
+    console.log(`👉 Open http://localhost:${PORT} in your browser to preview and style on the fly.`);
+  });
+}
